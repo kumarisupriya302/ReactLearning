@@ -1,0 +1,41 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+    const a= React.createElement(
+        "div",
+         {
+            id : "title"
+         },
+          "Heading1");
+          const b= React.createElement(
+        "h1",
+         {
+            id : "title1"
+         },
+          "Heading2");
+         const c=React.createElement(
+            "button",
+            {
+                className: "clk"
+            },
+            "Click Me!"
+         );
+          const all=React.createElement(
+            "div",
+            {
+                id: "container",
+                className: "abc"
+            },
+            [a,b,c]
+          );
+    const root=ReactDOM.createRoot(document.getElementById("root"));
+    root.render(all);
+    </script>
+</html>
